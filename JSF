@@ -25,8 +25,25 @@ JLabel lblEmailId = new JLabel("Email Id");
     lblEmailId.setBounds(65, 115, 46, 14);
     frame.getContentPane().add(lblEmailId);
 
-JComboBox comboBox = new JComboBox();
+    JComboBox comboBox = new JComboBox();
     comboBox.addItem("Program");
+ comboBox.addItem("BBA");
+    comboBox.addItem("BE");
+    comboBox.addItem("BBS");
+    comboBox.addItem("BCA");
+    comboBox.addItem("Others");
+    
+    JComboBox comboBox = new JComboBox();
+    comboBox.addItem("Field");
+    comboBox.addItem("CSE");
+    comboBox.addItem("EEE");
+    comboBox.addItem("ETC");
+    comboBox.addItem("Mec");
+    comboBox.addItem("Others");
+    
+    comboBox.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent arg0) {
+        }
  
  btnSubmit.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
