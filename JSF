@@ -1,0 +1,37 @@
+ public JSF() {
+        initialize();
+    }
+    private void initialize() {
+        frame = new JFrame();
+        frame.setBounds(100, 100, 730, 489);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().setLayout(null);
+       }
+  }
+textField = new JTextField();
+        textField.setBounds(128, 28, 86, 20);
+        frame.getContentPane().add(textField);
+        textField.setColumns(10);
+         
+        JLabel lblName = new JLabel("Name");
+        lblName.setBounds(65, 31, 46, 14);
+        frame.getContentPane().add(lblName);
+
+JLabel lblPhone = new JLabel("Phone #");
+    lblPhone.setBounds(65, 68, 46, 14);
+    frame.getContentPane().add(lblPhone);
+
+JLabel lblEmailId = new JLabel("Email Id");
+    lblEmailId.setBounds(65, 115, 46, 14);
+    frame.getContentPane().add(lblEmailId);
+
+JComboBox comboBox = new JComboBox();
+    comboBox.addItem("Program");
+ 
+ btnSubmit.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                if(textField.getText().isEmpty()||(textField_1.getText().isEmpty())||(textField_2.getText().isEmpty())||(textArea_1.getText().isEmpty())||((radioButton_1.isSelected())&&(radioButton.isSelected()))||(comboBox.getSelectedItem().equals("Select")))
+                    JOptionPane.showMessageDialog(null, "Data Missing");
+                else       
+                JOptionPane.showMessageDialog(null, "Data Submitted");
+            }
